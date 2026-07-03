@@ -1,90 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | WanderNest Travels</title>
 
-<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - WanderNest</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Menu -->
+<!-- Menu Button -->
 <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
 <!-- Sidebar -->
 <aside class="sidebar" id="sidebar">
 
-    <h2>🌍 WanderNest</h2>
+    <h2>WanderNest</h2>
 
     <nav>
-        <a href="index.html">🏠 Home</a>
-        <a href="about.html">ℹ️ About</a>
-        <a href="experiences.html">✈️ Experiences</a>
-        <a href="gallery.html">🖼 Gallery</a>
-        <a href="contact.html">📞 Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
 </aside>
 
+<!-- Overlay -->
 <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
-<!-- CONTACT SECTION -->
-<section>
+<!-- CONTACT -->
+<section class="contact">
 
-    <div class="section-title hidden">
-
+    <div class="section-title">
         <h2>Contact Us</h2>
-
-        <p>Book your trip or get in touch with us</p>
-
+        <p>We would love to hear from you.</p>
     </div>
 
-    <!-- SIMPLE FORM -->
-    <form onsubmit="return validateForm()" class="hidden">
+    <form>
 
-        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" placeholder="Your Name" required>
 
-        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="email" placeholder="Your Email" required>
 
-        <textarea id="message" placeholder="Your Message" required></textarea>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
 
-        <button class="btn">Send</button>
+        <button type="submit">Send Message</button>
 
     </form>
 
-    <!-- BASIC INFO -->
-    <div style="text-align:center;margin-top:40px;" class="hidden">
-
-        <h3>📍 Address</h3>
-        <p>Chennai, India</p>
-
-        <br>
-
-        <h3>📞 Phone</h3>
-        <p>+91 987XX XXXXX</p>
-
-        <br>
-
-        <h3>📧 Email</h3>
-        <p>info@wandernest.com</p>
-
-    </div>
-
 </section>
-
-<button id="topBtn" onclick="topFunction()">↑</button>
-
-<footer>
-
-    <h2>🌍 WanderNest Travels</h2>
-
-    <p>Dream • Discover</p>
-
-    <p>© 2026 WanderNest Travels</p>
-
-</footer>
 
 <script src="script.js"></script>
 
