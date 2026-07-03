@@ -1,118 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiences | WanderNest Travels</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiences | WanderNest Travels</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Menu Button -->
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+<!-- Menu -->
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
 
-    <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
-        <h2>🌍 WanderNest</h2>
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
 
-        <nav>
-            <a href="index.html">🏠 Home</a>
-            <a href="about.html">ℹ️ About</a>
-            <a href="experiences.html">✈️ Experiences</a>
-            <a href="gallery.html">🖼 Gallery</a>
-            <a href="contact.html">📞 Contact</a>
-        </nav>
-    </aside>
+    <h2>🌍 WanderNest</h2>
 
-    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">ℹ️ About</a>
+        <a href="experiences.html">✈️ Experiences</a>
+        <a href="gallery.html">🖼 Gallery</a>
+        <a href="contact.html">📞 Contact</a>
+    </nav>
 
-    <section class="experiences">
+</aside>
 
-        <div class="section-title hidden">
-            <h2>Travel Experiences</h2>
-            <p>Choose your dream destination and start your next adventure.</p>
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+<section>
+
+    <div class="section-title hidden">
+
+        <h2>Experience Beautiful Places</h2>
+
+        <p>
+            Discover breathtaking destinations and create unforgettable
+            memories with WanderNest Travels.
+        </p>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="card hidden">
+            <img src="images/paris.jpg" alt="Paris">
+
+            <div class="card-content">
+                <h3>Paris City Tour</h3>
+
+                <p>5 Days / 4 Nights</p>
+
+                <h3>₹85,000</h3>
+
+                <a href="contact.html" class="btn">Book Now</a>
+            </div>
         </div>
 
-        <div class="grid">
+        <div class="card hidden">
+            <img src="images/bali.jpg" alt="Bali">
 
-            <!-- Paris -->
-            <div class="card hidden">
-                <img src="images/paris.jpg" alt="Paris">
-                <div class="card-content">
-                    <h3>Paris City Tour</h3>
-                    <p>5 Days / 4 Nights</p>
-                    <div class="price">₹85,000</div>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
+            <div class="card-content">
+                <h3>Bali Escape</h3>
+
+                <p>5 Days / 4 Nights</p>
+
+                <h3>₹70,000</h3>
+
+                <a href="contact.html" class="btn">Book Now</a>
             </div>
-
-            <!-- Bali -->
-            <div class="card hidden">
-                <img src="images/bali.jpg" alt="Bali">
-                <div class="card-content">
-                    <h3>Bali Escape</h3>
-                    <p>5 Days / 4 Nights</p>
-                    <div class="price">₹70,000</div>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Maldives -->
-            <div class="card hidden">
-                <img src="images/maldives.jpg" alt="Maldives">
-                <div class="card-content">
-                    <h3>Maldives Luxury Trip</h3>
-                    <p>5 Days / 4 Nights</p>
-                    <div class="price">₹95,000</div>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Thailand -->
-            <div class="card hidden">
-                <img src="images/thailand.jpg" alt="Thailand">
-                <div class="card-content">
-                    <h3>Thailand Explorer</h3>
-                    <p>5 Days / 4 Nights</p>
-                    <div class="price">₹60,000</div>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Singapore -->
-            <div class="card hidden">
-                <img src="images/singapore.jpg" alt="Singapore">
-                <div class="card-content">
-                    <h3>Singapore Trip</h3>
-                    <p>4 Days / 3 Nights</p>
-                    <div class="price">₹75,000</div>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
-            <!-- Dubai -->
-            <div class="card hidden">
-                <img src="images/dubai.jpg" alt="Dubai">
-                <div class="card-content">
-                    <h3>Dubai City Tour</h3>
-                    <p>5 Days / 4 Nights</p>
-                    <div class="price">₹90,000</div>
-                    <a href="contact.html" class="btn">Book Now</a>
-                </div>
-            </div>
-
         </div>
 
-    </section>
+        <div class="card hidden">
+            <img src="images/maldives.jpg" alt="Maldives">
 
-    <footer>
-        <h2>🌍 WanderNest Travels</h2>
-        <p>Explore • Dream • Discover</p>
-        <p>© 2026 WanderNest Travels. All Rights Reserved.</p>
-    </footer>
+            <div class="card-content">
+                <h3>Maldives Luxury</h3>
 
-    <script src="script.js"></script>
+                <p>5 Days / 4 Nights</p>
+
+                <h3>₹95,000</h3>
+
+                <a href="contact.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card hidden">
+            <img src="images/thailand.jpg" alt="Thailand">
+
+            <div class="card-content">
+                <h3>Thailand Explorer</h3>
+
+                <p>5 Days / 4 Nights</p>
+
+                <h3>₹60,000</h3>
+
+                <a href="contact.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card hidden">
+            <img src="images/singapore.jpg" alt="Singapore">
+
+            <div class="card-content">
+                <h3>Singapore Trip</h3>
+
+                <p>4 Days / 3 Nights</p>
+
+                <h3>₹75,000</h3>
+
+                <a href="contact.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card hidden">
+            <img src="images/dubai.jpg" alt="Dubai">
+
+            <div class="card-content">
+                <h3>Dubai City Tour</h3>
+
+                <p>5 Days / 4 Nights</p>
+
+                <h3>₹90,000</h3>
+
+                <a href="contact.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h2>🌍 WanderNest Travels</h2>
+
+    <p>Dream • Discover</p>
+
+    <p>© 2026 WanderNest Travels. All Rights Reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
