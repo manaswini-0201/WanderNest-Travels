@@ -6,11 +6,8 @@
 <title>Contact | WanderNest Travels</title>
 
 <link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
 </head>
+
 <body>
 
 <!-- Menu -->
@@ -19,137 +16,73 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 <!-- Sidebar -->
 <aside class="sidebar" id="sidebar">
 
-<h2>🌍 WanderNest</h2>
+    <h2>🌍 WanderNest</h2>
 
-<nav>
-<a href="index.html">🏠 Home</a>
-<a href="about.html">ℹ️ About</a>
-<a href="experiences.html">✈️ Experiences</a>
-<a href="gallery.html">🖼 Gallery</a>
-<a href="contact.html">📞 Contact</a>
-</nav>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">ℹ️ About</a>
+        <a href="experiences.html">✈️ Experiences</a>
+        <a href="gallery.html">🖼 Gallery</a>
+        <a href="contact.html">📞 Contact</a>
+    </nav>
 
 </aside>
 
 <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
+<!-- CONTACT SECTION -->
 <section>
 
-<div class="section-title hidden">
+    <div class="section-title hidden">
 
-<h2>Book Your Dream Trip</h2>
+        <h2>Contact Us</h2>
 
-<p>
-Ready to explore the world?
-Tell us where you'd like to go and we'll plan the perfect vacation for you.
-</p>
+        <p>Book your trip or get in touch with us</p>
 
-</div>
+    </div>
 
-<form onsubmit="return validateForm()" class="hidden">
+    <!-- SIMPLE FORM -->
+    <form onsubmit="return validateForm()" class="hidden">
 
-<input
-type="text"
-id="name"
-placeholder="Full Name"
-required>
+        <input type="text" id="name" placeholder="Your Name" required>
 
-<input
-type="email"
-id="email"
-placeholder="Email Address"
-required>
+        <input type="email" id="email" placeholder="Your Email" required>
 
-<select style="width:100%;padding:15px;margin:12px 0;border:2px solid #ddd;border-radius:10px;">
+        <textarea id="message" placeholder="Your Message" required></textarea>
 
-<option>Select Destination</option>
+        <button class="btn">Send</button>
 
-<option>Paris</option>
+    </form>
 
-<option>Bali</option>
+    <!-- BASIC INFO -->
+    <div style="text-align:center;margin-top:40px;" class="hidden">
 
-<option>Maldives</option>
+        <h3>📍 Address</h3>
+        <p>Chennai, India</p>
 
-<option>Thailand</option>
+        <br>
 
-<option>Singapore</option>
+        <h3>📞 Phone</h3>
+        <p>+91 987XX XXXXX</p>
 
-<option>Dubai</option>
+        <br>
 
-</select>
+        <h3>📧 Email</h3>
+        <p>info@wandernest.com</p>
 
-<input
-type="date"
-required>
-
-<textarea
-id="message"
-placeholder="Tell us about your dream trip..."
-required></textarea>
-
-<button class="btn">
-Book Your Trip
-</button>
-
-</form>
-
-<br><br>
-
-<div style="text-align:center;line-height:2;">
-
-<h3>📍 Office Address</h3>
-
-<p>Hyderabad, Telangana, India</p>
-
-<br>
-
-<h3>📞 Phone</h3>
-
-<p>+91 98765 43210</p>
-
-<br>
-
-<h3>📧 Email</h3>
-
-<p>info@wandernesttravels.com</p>
-
-<br>
-
-<h3>Follow Us</h3>
-
-<div style="font-size:32px;">
-
-<i class="fab fa-facebook"></i>
-
-&nbsp;&nbsp;
-
-<i class="fab fa-instagram"></i>
-
-&nbsp;&nbsp;
-
-<i class="fab fa-twitter"></i>
-
-&nbsp;&nbsp;
-
-<i class="fab fa-youtube"></i>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<button id="topBtn" onclick="topFunction()">
-↑
-</button>
+<button id="topBtn" onclick="topFunction()">↑</button>
 
 <footer>
 
-<h2>🌍 WanderNest Travels</h2>
+    <h2>🌍 WanderNest Travels</h2>
 
-<p>Dream • Discover</p>
+    <p>Dream • Discover</p>
 
-<p>© 2026 WanderNest Travels. All Rights Reserved.</p>
+    <p>© 2026 WanderNest Travels</p>
 
 </footer>
 
