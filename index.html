@@ -1,29 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WanderNest Travels</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ☰ BUTTON -->
-<div class="menu" onclick="toggleMenu()">☰</div>
+    <!-- Menu Button -->
+    <div class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </div>
 
-<!-- SIDEBAR -->
-<div class="links" id="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="experiences.html">Experiences</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-</div>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
 
-<!-- HERO -->
-<div class="hero">
-    <div class="overlay"></div>
-    <h1>WanderNest Travels</h1>
-</div>
+        <div class="sidebar-header">
+            <h2>🌍 WanderNest</h2>
+        </div>
 
-<script src="script.js"></script>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="about.html">ℹ️ About</a>
+            <a href="experiences.html">✈️ Experiences</a>
+            <a href="gallery.html">🖼 Gallery</a>
+            <a href="contact.html">📞 Contact</a>
+        </nav>
+
+    </aside>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>WanderNest Travels</h1>
+
+            <p>Explore • Dream • Discover</p>
+
+            <a href="experiences.html" class="hero-btn">
+                Explore Destinations
+            </a>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
