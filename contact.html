@@ -3,54 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - WanderNest Travels</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <title>Gallery | WanderNest Travels</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<header>
-    <div class="logo">WanderNest</div>
+    <!-- Menu -->
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
-    <nav id="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
 
-    <div class="menu" onclick="toggleMenu()">☰</div>
-</header>
+        <h2>🌍 WanderNest</h2>
 
-<section class="section">
-    <h2>Contact Us</h2>
-    <p>We’d love to help you plan your next journey.</p>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="about.html">ℹ️ About</a>
+            <a href="experiences.html">✈️ Experiences</a>
+            <a href="gallery.html">🖼 Gallery</a>
+            <a href="contact.html">📞 Contact</a>
+        </nav>
 
-    <form onsubmit="return validateForm()" class="contact-form">
+    </aside>
 
-        <input type="text" id="name" placeholder="Your Name">
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
-        <input type="email" id="email" placeholder="Your Email">
+    <!-- Gallery -->
 
-        <textarea id="message" placeholder="Your Message"></textarea>
+    <section class="gallery">
 
-        <button type="submit" class="btn">Send Message</button>
+        <div class="section-title hidden">
+            <h2>Travel Gallery</h2>
+            <p>Explore beautiful moments from our destinations</p>
+        </div>
 
-    </form>
-</section>
+        <div class="slider hidden">
 
-<section class="section alt">
-    <h2>Office Info</h2>
-    <p>Email: support@wandernest.com</p>
-    <p>Phone: +91 98765 43210</p>
-    <p>Location: India</p>
-</section>
+            <div class="prev" onclick="prevSlide()">❮</div>
 
-<footer>
-    <p>&copy; 2026 WanderNest Travels</p>
-</footer>
+            <img id="slide" src="images/gallery1.jpg" alt="Gallery">
 
-<script src="js/script.js"></script>
+            <div class="next" onclick="nextSlide()">❯</div>
+
+        </div>
+
+        <div class="caption hidden" id="caption">
+            Paris
+        </div>
+
+        <div class="dots">
+
+            <span class="dot active" onclick="showSlide(0)"></span>
+
+            <span class="dot" onclick="showSlide(1)"></span>
+
+            <span class="dot" onclick="showSlide(2)"></span>
+
+            <span class="dot" onclick="showSlide(3)"></span>
+
+            <span class="dot" onclick="showSlide(4)"></span>
+
+            <span class="dot" onclick="showSlide(5)"></span>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h2>🌍 WanderNest Travels</h2>
+
+        <p>Explore • Dream • Discover</p>
+
+        <p>© 2026 WanderNest Travels. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
