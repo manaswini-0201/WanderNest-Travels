@@ -1,86 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | WanderNest Travels</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | WanderNest Travels</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 <body>
 
-    <!-- Menu -->
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+<!-- Menu -->
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
 
-    <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
 
-        <h2>🌍 WanderNest</h2>
+<h2>🌍 WanderNest</h2>
 
-        <nav>
-            <a href="index.html">🏠 Home</a>
-            <a href="about.html">ℹ️ About</a>
-            <a href="experiences.html">✈️ Experiences</a>
-            <a href="gallery.html">🖼 Gallery</a>
-            <a href="contact.html">📞 Contact</a>
-        </nav>
+<nav>
+<a href="index.html">🏠 Home</a>
+<a href="about.html">ℹ️ About</a>
+<a href="experiences.html">✈️ Experiences</a>
+<a href="gallery.html">🖼 Gallery</a>
+<a href="contact.html">📞 Contact</a>
+</nav>
 
-    </aside>
+</aside>
 
-    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
-    <!-- Gallery -->
+<section>
 
-    <section class="gallery">
+<div class="section-title hidden">
 
-        <div class="section-title hidden">
-            <h2>Travel Gallery</h2>
-            <p>Explore beautiful moments from our destinations</p>
-        </div>
+<h2>Book Your Dream Trip</h2>
 
-        <div class="slider hidden">
+<p>
+Ready to explore the world?
+Tell us where you'd like to go and we'll plan the perfect vacation for you.
+</p>
 
-            <div class="prev" onclick="prevSlide()">❮</div>
+</div>
 
-            <img id="slide" src="images/gallery1.jpg" alt="Gallery">
+<form onsubmit="return validateForm()" class="hidden">
 
-            <div class="next" onclick="nextSlide()">❯</div>
+<input
+type="text"
+id="name"
+placeholder="Full Name"
+required>
 
-        </div>
+<input
+type="email"
+id="email"
+placeholder="Email Address"
+required>
 
-        <div class="caption hidden" id="caption">
-            Paris
-        </div>
+<select style="width:100%;padding:15px;margin:12px 0;border:2px solid #ddd;border-radius:10px;">
 
-        <div class="dots">
+<option>Select Destination</option>
 
-            <span class="dot active" onclick="showSlide(0)"></span>
+<option>Paris</option>
 
-            <span class="dot" onclick="showSlide(1)"></span>
+<option>Bali</option>
 
-            <span class="dot" onclick="showSlide(2)"></span>
+<option>Maldives</option>
 
-            <span class="dot" onclick="showSlide(3)"></span>
+<option>Thailand</option>
 
-            <span class="dot" onclick="showSlide(4)"></span>
+<option>Singapore</option>
 
-            <span class="dot" onclick="showSlide(5)"></span>
+<option>Dubai</option>
 
-        </div>
+</select>
 
-    </section>
+<input
+type="date"
+required>
 
-    <footer>
+<textarea
+id="message"
+placeholder="Tell us about your dream trip..."
+required></textarea>
 
-        <h2>🌍 WanderNest Travels</h2>
+<button class="btn">
+Book Your Trip
+</button>
 
-        <p>Explore • Dream • Discover</p>
+</form>
 
-        <p>© 2026 WanderNest Travels. All Rights Reserved.</p>
+<br><br>
 
-    </footer>
+<div style="text-align:center;line-height:2;">
 
-    <script src="script.js"></script>
+<h3>📍 Office Address</h3>
+
+<p>Hyderabad, Telangana, India</p>
+
+<br>
+
+<h3>📞 Phone</h3>
+
+<p>+91 98765 43210</p>
+
+<br>
+
+<h3>📧 Email</h3>
+
+<p>info@wandernesttravels.com</p>
+
+<br>
+
+<h3>Follow Us</h3>
+
+<div style="font-size:32px;">
+
+<i class="fab fa-facebook"></i>
+
+&nbsp;&nbsp;
+
+<i class="fab fa-instagram"></i>
+
+&nbsp;&nbsp;
+
+<i class="fab fa-twitter"></i>
+
+&nbsp;&nbsp;
+
+<i class="fab fa-youtube"></i>
+
+</div>
+
+</div>
+
+</section>
+
+<button id="topBtn" onclick="topFunction()">
+↑
+</button>
+
+<footer>
+
+<h2>🌍 WanderNest Travels</h2>
+
+<p>Dream • Discover</p>
+
+<p>© 2026 WanderNest Travels. All Rights Reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
