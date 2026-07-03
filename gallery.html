@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | WanderNest Travels</title>
+    <title>Gallery - WanderNest</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Menu -->
+<!-- Menu Button -->
 <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
 <!-- Sidebar -->
 <aside class="sidebar" id="sidebar">
 
-    <h2>🌍 WanderNest</h2>
+    <h2>WanderNest</h2>
 
     <nav>
-        <a href="index.html">🏠 Home</a>
-        <a href="about.html">ℹ️ About</a>
-        <a href="experiences.html">✈️ Experiences</a>
-        <a href="gallery.html">🖼 Gallery</a>
-        <a href="contact.html">📞 Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
 </aside>
 
+<!-- Overlay -->
 <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
-<section>
+<!-- GALLERY -->
+<section class="gallery">
 
-    <div class="section-title hidden">
-
+    <div class="section-title">
         <h2>Explore Our Travel Gallery</h2>
-
-        <p>
-            A glimpse of the world's most beautiful destinations waiting for you.
-        </p>
-
+        <p>A glimpse of the world's most beautiful destinations.</p>
     </div>
 
-    <div class="slider hidden">
+    <div class="slider">
 
         <div class="prev" onclick="prevSlide()">❮</div>
 
@@ -51,9 +50,7 @@
 
     </div>
 
-    <div class="caption" id="caption">
-        Paris
-    </div>
+    <div class="caption" id="caption">Paris</div>
 
     <div class="dots">
 
@@ -67,16 +64,6 @@
     </div>
 
 </section>
-
-<footer>
-
-    <h2>🌍 WanderNest Travels</h2>
-
-    <p>Dream • Discover</p>
-
-    <p>© 2026 WanderNest Travels. All Rights Reserved.</p>
-
-</footer>
 
 <script src="script.js"></script>
 
