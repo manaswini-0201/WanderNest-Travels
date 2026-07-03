@@ -1,116 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WanderNest Travels</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<!-- ===== NAVBAR ===== -->
+<nav>
+    <h2 class="logo">🌍 WanderNest</h2>
 
-<body>
-
-<!-- Header -->
-<header>
-    <div class="logo">WanderNest</div>
-
-    <nav id="nav">
+    <div class="links" id="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="experiences.html">Experiences</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
-    </nav>
+    </div>
 
     <div class="menu" onclick="toggleMenu()">☰</div>
-</header>
+</nav>
 
-<!-- Hero Section -->
-<section class="hero">
-    <h1>Explore the World with WanderNest</h1>
-    <p>Your journey begins here. Discover unforgettable travel experiences.</p>
-    <a href="experiences.html" class="btn">Explore Packages</a>
-</section>
+<!-- ===== HERO / DESTINATIONS ===== -->
+<section class="destinations hidden">
 
-<!-- Featured -->
-<section class="section">
-    <h2>Featured Destinations</h2>
+    <div class="section-title">
+        <h2>Popular Destinations</h2>
+        <p>Explore the most loved travel spots</p>
+    </div>
 
     <div class="grid">
-        <div class="card">
+
+        <div class="card" id="paris">
             <img src="images/paris.jpg" alt="Paris">
-            <h3>Paris</h3>
-            <p>The city of love and lights.</p>
+            <div class="card-content">
+                <h3>Paris</h3>
+                <p>The city of love and lights.</p>
+            </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="maldives">
             <img src="images/maldives.jpg" alt="Maldives">
-            <h3>Maldives</h3>
-            <p>Crystal clear waters and luxury resorts.</p>
+            <div class="card-content">
+                <h3>Maldives</h3>
+                <p>Crystal clear waters and luxury resorts.</p>
+            </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="bali">
             <img src="images/bali.jpg" alt="Bali">
-            <h3>Bali</h3>
-            <p>Tropical paradise with rich culture.</p>
+            <div class="card-content">
+                <h3>Bali</h3>
+                <p>Tropical paradise with rich culture.</p>
+            </div>
         </div>
+
     </div>
 </section>
 
-<!-- Why Us -->
-<section class="section alt">
-    <h2>Why Choose Us?</h2>
-
-    <div class="grid">
-        <div class="card">
-            <h3>Affordable Prices</h3>
-            <p>Best travel deals for students and families.</p>
-        </div>
-
-        <div class="card">
-            <h3>Safe Travel</h3>
-            <p>We ensure 100% safety and comfort.</p>
-        </div>
-
-        <div class="card">
-            <h3>24/7 Support</h3>
-            <p>We are always here to help you.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Testimonials -->
-<section class="section">
-    <h2>What Travelers Say</h2>
-
-    <div class="grid">
-        <div class="card">
-            <p>"Amazing experience! Everything was well organized."</p>
-            <h4>- Rahul</h4>
-        </div>
-
-        <div class="card">
-            <p>"Best travel agency for students like me."</p>
-            <h4>- Ananya</h4>
-        </div>
-
-        <div class="card">
-            <p>"Loved the Maldives trip, unforgettable!"</p>
-            <h4>- Priya</h4>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer>
-    <p>&copy; 2026 WanderNest Travels | All Rights Reserved</p>
-</footer>
-
-<script src="js/script.js"></script>
-</body>
-</html>
-<!-- FEATURES -->
-
-<section class="about hidden">
+<!-- ===== FEATURES ===== -->
+<section class="features hidden">
 
     <div class="section-title">
         <h2>Why Choose WanderNest?</h2>
@@ -141,16 +82,14 @@
         </div>
 
     </div>
-
 </section>
 
-<!-- TESTIMONIALS -->
-
-<section class="gallery hidden">
+<!-- ===== REVIEWS ===== -->
+<section class="reviews hidden">
 
     <div class="section-title">
         <h2>Traveler Reviews</h2>
-        <p>What our happy travelers say.</p>
+        <p>What our happy travelers say</p>
     </div>
 
     <div class="grid">
@@ -180,55 +119,32 @@
         </div>
 
     </div>
-
 </section>
 
-<!-- NEWSLETTER -->
-
-<section class="contact hidden">
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter-section hidden">
 
     <div class="section-title">
         <h2>Stay Updated</h2>
-        <p>Subscribe to receive travel tips and exciting offers.</p>
+        <p>Subscribe to receive travel tips and offers</p>
     </div>
 
     <form class="newsletter">
-
-        <input type="email"
-               placeholder="Enter your email"
-               required>
-
-        <button class="btn" type="submit">
-            Subscribe
-        </button>
-
+        <input type="email" placeholder="Enter your email" required>
+        <button class="btn" type="submit">Subscribe</button>
     </form>
 
 </section>
 
-<!-- FOOTER -->
-
+<!-- ===== FOOTER ===== -->
 <footer>
 
     <h2>🌍 WanderNest</h2>
-
     <p>Explore • Dream • Discover</p>
 
-    <br>
-
-    <p>
-        © 2026 WanderNest. All Rights Reserved.
-    </p>
+    <p>© 2026 WanderNest. All Rights Reserved.</p>
 
 </footer>
 
-<!-- Back To Top -->
-
-<button id="topBtn" title="Go to Top">
-    ↑
-</button>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+<!-- ===== BACK TO TOP BUTTON ===== -->
+<button id="topBtn" onclick="topFunction()">↑</button>
