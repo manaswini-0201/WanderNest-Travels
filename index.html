@@ -1,150 +1,29 @@
-<!-- ===== NAVBAR ===== -->
-<nav>
-    <h2 class="logo">🌍 WanderNest</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WanderNest Travels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <div class="links" id="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </div>
+<!-- ☰ BUTTON -->
+<div class="menu" onclick="toggleMenu()">☰</div>
 
-    <div class="menu" onclick="toggleMenu()">☰</div>
-</nav>
+<!-- SIDEBAR -->
+<div class="links" id="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</div>
 
-<!-- ===== HERO / DESTINATIONS ===== -->
-<section class="destinations hidden">
+<!-- HERO -->
+<div class="hero">
+    <div class="overlay"></div>
+    <h1>WanderNest Travels</h1>
+</div>
 
-    <div class="section-title">
-        <h2>Popular Destinations</h2>
-        <p>Explore the most loved travel spots</p>
-    </div>
-
-    <div class="grid">
-
-        <div class="card" id="paris">
-            <img src="images/paris.jpg" alt="Paris">
-            <div class="card-content">
-                <h3>Paris</h3>
-                <p>The city of love and lights.</p>
-            </div>
-        </div>
-
-        <div class="card" id="maldives">
-            <img src="images/maldives.jpg" alt="Maldives">
-            <div class="card-content">
-                <h3>Maldives</h3>
-                <p>Crystal clear waters and luxury resorts.</p>
-            </div>
-        </div>
-
-        <div class="card" id="bali">
-            <img src="images/bali.jpg" alt="Bali">
-            <div class="card-content">
-                <h3>Bali</h3>
-                <p>Tropical paradise with rich culture.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- ===== FEATURES ===== -->
-<section class="features hidden">
-
-    <div class="section-title">
-        <h2>Why Choose WanderNest?</h2>
-        <p>We make every trip comfortable and unforgettable.</p>
-    </div>
-
-    <div class="grid">
-
-        <div class="card">
-            <div class="card-content">
-                <h3>🛡 Safe Travel</h3>
-                <p>Travel with confidence using our trusted travel services.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <h3>📞 24/7 Support</h3>
-                <p>Our team is available anytime to help you during your trip.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <h3>⭐ Best Experience</h3>
-                <p>Thousands of happy travelers choose WanderNest every year.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- ===== REVIEWS ===== -->
-<section class="reviews hidden">
-
-    <div class="section-title">
-        <h2>Traveler Reviews</h2>
-        <p>What our happy travelers say</p>
-    </div>
-
-    <div class="grid">
-
-        <div class="card">
-            <div class="card-content">
-                <h3>⭐⭐⭐⭐⭐</h3>
-                <p>"Amazing experience! Everything was perfectly organized."</p>
-                <h4>- Rahul</h4>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <h3>⭐⭐⭐⭐⭐</h3>
-                <p>"Beautiful destinations and excellent service!"</p>
-                <h4>- Ananya</h4>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <h3>⭐⭐⭐⭐⭐</h3>
-                <p>"My Maldives trip was unforgettable. Highly recommended!"</p>
-                <h4>- Priya</h4>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- ===== NEWSLETTER ===== -->
-<section class="newsletter-section hidden">
-
-    <div class="section-title">
-        <h2>Stay Updated</h2>
-        <p>Subscribe to receive travel tips and offers</p>
-    </div>
-
-    <form class="newsletter">
-        <input type="email" placeholder="Enter your email" required>
-        <button class="btn" type="submit">Subscribe</button>
-    </form>
-
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer>
-
-    <h2>🌍 WanderNest</h2>
-    <p>Explore • Dream • Discover</p>
-
-    <p>© 2026 WanderNest. All Rights Reserved.</p>
-
-</footer>
-
-<!-- ===== BACK TO TOP BUTTON ===== -->
-<button id="topBtn" onclick="topFunction()">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
