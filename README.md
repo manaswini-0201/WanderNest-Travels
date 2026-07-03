@@ -32,5 +32,57 @@ This project focuses on building a clean UI using HTML, CSS, and JavaScript with
 - JavaScript (Vanilla JS)
 
 ---
-
 ## 📂 Project Structure
+WanderNest-Travels/
+│── index.html
+│── about.html
+│── experiences.html
+│── gallery.html
+│── contact.html
+│── style.css
+│── script.js
+│── images/
+│ ├── hero.jpg
+│ ├── paris.jpg
+│ ├── bali.jpg
+│ ├── maldives.jpg
+│ ├── thailand.jpg
+│ ├── singapore.jpg
+│ ├── dubai.jpg
+│ ├── gallery1.jpg
+│ ├── gallery2.jpg
+│ ├── gallery3.jpg
+│ ├── gallery4.jpg
+│ ├── gallery5.jpg
+│ ├── gallery6.jpg
+
+
+---
+
+## 📸 Pages Included
+
+- Home (Landing page with hero section)
+- About (Project/company information)
+- Experiences (Travel packages)
+- Gallery (Image slider)
+- Contact (Form + details)
+
+---
+
+## 🚀 How to Run
+
+1. Download or clone the repository  
+2. Open `index.html` in any browser  
+3. Navigate using the sidebar menu  
+
+---
+
+## 👨‍🎓 Project Type
+
+College front-end web development project (static website)
+
+---
+
+## 📌 Note
+
+This project is built for learning purposes using only front-end technologies.
