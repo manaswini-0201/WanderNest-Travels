@@ -1,16 +1,16 @@
-// Mobile Menu
+// MOBILE MENU
 function toggleMenu() {
     document.getElementById("nav").classList.toggle("show");
 }
 
-// Close menu after clicking a link
+// CLOSE MENU ON LINK CLICK
 document.querySelectorAll("#nav a").forEach(link => {
     link.addEventListener("click", () => {
         document.getElementById("nav").classList.remove("show");
     });
 });
 
-// Contact Form Validation
+// CONTACT FORM VALIDATION
 function validateForm() {
 
     const name = document.getElementById("name");
@@ -31,26 +31,23 @@ function validateForm() {
     return true;
 }
 
-// Back To Top Button
+// BACK TO TOP BUTTON + SCROLL EFFECT
 const topBtn = document.getElementById("topBtn");
 
 window.onscroll = function () {
 
     if (topBtn) {
-
         if (document.documentElement.scrollTop > 200) {
             topBtn.style.display = "block";
         } else {
             topBtn.style.display = "none";
         }
-
     }
 
     reveal();
-
 };
 
-// Scroll To Top
+// SCROLL TO TOP
 function topFunction() {
     window.scrollTo({
         top: 0,
@@ -58,38 +55,28 @@ function topFunction() {
     });
 }
 
-// Fade Animation
+// REVEAL ANIMATION
 function reveal() {
-
     const elements = document.querySelectorAll(".hidden");
 
     elements.forEach(el => {
-
         const top = el.getBoundingClientRect().top;
 
         if (top < window.innerHeight - 100) {
             el.classList.add("show");
         }
-
     });
-
 }
 
 reveal();
 
-// Newsletter
+// NEWSLETTER FORM
 const newsletter = document.querySelector(".newsletter");
 
 if (newsletter) {
-
     newsletter.addEventListener("submit", function(e) {
-
         e.preventDefault();
-
         alert("Thank you for subscribing to WanderNest!");
-
         newsletter.reset();
-
     });
-
 }
